@@ -13,5 +13,11 @@ pipeline {
                 sh 'mvn --version'
             }
         }
+
+        stage(' Print message ') {
+            steps {
+                echo 'Hello, World'
+            }
+        }
     }
 }
